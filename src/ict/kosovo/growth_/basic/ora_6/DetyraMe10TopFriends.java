@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class DetyraMe10TopFriends {
     public static void main(String[] args) {
       String [] friends = {"Jon", "Nik", "Klaus","Elijah","Noah", "Elena","Jooy","Kai", "Tyrion"};
-      for (int i = 3; i< friends.length;i++) {
+      for (int i = 0; i< friends.length;i++) {
           System.out.println(friends[i]);
       }
 
