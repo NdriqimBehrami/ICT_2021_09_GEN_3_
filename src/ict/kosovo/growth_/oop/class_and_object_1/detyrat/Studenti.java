@@ -92,6 +92,17 @@ public class Studenti {
     public boolean getMeKorrospodenc() {
         return meKorrospodenc;
     }
+    public static void hyProvim(){
+        System.out.println("eshte hap afati provimeve");
+    }
+    public static void bursa(double notaMesatare){
+        if (notaMesatare <9){
+            System.out.println("nuk mund te merrni burse kete vite");
+        }
+        else {
+            System.out.println("urime per bursen");
+        }
+    }
 
 }
 
