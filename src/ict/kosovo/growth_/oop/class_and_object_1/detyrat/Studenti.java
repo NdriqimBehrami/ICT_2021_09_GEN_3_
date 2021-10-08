@@ -8,8 +8,10 @@ public class Studenti {
     private double notaMesatare;
     private int gjenerata;
     private String lokacioniStudimeve;
-   private boolean meKorrospodenc;
-    public Studenti(){
+    private boolean meKorrospodenc;
+
+    public Studenti() {
+        //Vlera default
 
     }
 
@@ -21,7 +23,7 @@ public class Studenti {
         this.notaMesatare = notaMesatare;
         this.gjenerata = gjenerata;
         this.lokacioniStudimeve = lokacioniStudimeve;
-    this.meKorrospodenc = meKorrospodenc;
+        this.meKorrospodenc = meKorrospodenc;
     }
 
     public void setEmri(String emri) {
@@ -29,7 +31,7 @@ public class Studenti {
     }
 
     public String getEmri() {
-        if(emri == null) {
+        if (emri == null) {
             System.out.println(" Nuk mundeni pa emer ");
         }
         return emri;
