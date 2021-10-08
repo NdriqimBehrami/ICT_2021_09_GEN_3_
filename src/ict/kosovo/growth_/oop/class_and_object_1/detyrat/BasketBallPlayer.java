@@ -10,7 +10,7 @@ public class BasketBallPlayer {
     private double kercimiLart;
     private double shpejtsia;
     private String pozita;
-    private int shitja;
+    private int shitja ;
 
     public BasketBallPlayer(){
         //vlerat
