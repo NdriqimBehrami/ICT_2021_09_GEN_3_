@@ -17,6 +17,11 @@ public class BasketBallPlayerTest {
                 "me shpejtsi per meter %.2f ne poziten ku luan %s qe ne shitje doli me cmimin ne miliomn %d %n",newplayer.getEmri(),newplayer.getMbiemri()
         ,newplayer.getNumri(),newplayer.getEkipiLuajtes(),newplayer.getGjatsia(),newplayer.getPreciziteti(),newplayer.getKercimiLart(),newplayer.getShpejtsia()
         ,newplayer.getPozita(),newplayer.getShitja());
+
+
+        BasketBallPlayer.gjumi();
+        BasketBallPlayer.vrapimi();
+        BasketBallPlayer.ushtrimet();
     }
 
 }

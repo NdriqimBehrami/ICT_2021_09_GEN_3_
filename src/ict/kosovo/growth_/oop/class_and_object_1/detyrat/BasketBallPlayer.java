@@ -10,9 +10,9 @@ public class BasketBallPlayer {
     private double kercimiLart;
     private double shpejtsia;
     private String pozita;
-    private int shitja ;
+    private int shitja;
 
-    public BasketBallPlayer(){
+    public BasketBallPlayer() {
         //vlerat
     }
 
@@ -94,5 +94,17 @@ public class BasketBallPlayer {
 
     public void setShitja(int shitja) {
         this.shitja = shitja;
+    }
+
+    public static void ushtrimet() {
+        System.out.println("I kam perfunduar sot");
+    }
+
+    public static void vrapimi() {
+        System.out.println("Jam duke vrapur");
+    }
+
+    public static void gjumi() {
+        System.out.println("Nuk kam gjume te mjaftueshem");
     }
 }
