@@ -1,9 +1,9 @@
 package ict.kosovo.growth_.oop.enums.detyra_shtepie;
 
-public class EnumTest {
+public class DayTest {
     Day day;
 
-    public EnumTest(Day day) {
+    public DayTest(Day day) {
         this.day = day;
     }
 
@@ -28,15 +28,15 @@ public class EnumTest {
     }
 
     public static void main(String[] args) {
-        EnumTest firstDay = new EnumTest(Day.MONDAY);
+        DayTest firstDay = new DayTest(Day.MONDAY);
         firstDay.tellItLikeItIs();
-        EnumTest thirdDay = new EnumTest(Day.WEDNESDAY);
+        DayTest thirdDay = new DayTest(Day.WEDNESDAY);
         thirdDay.tellItLikeItIs();
-        EnumTest fifthDay = new EnumTest(Day.FRIDAY);
+        DayTest fifthDay = new DayTest(Day.FRIDAY);
         fifthDay.tellItLikeItIs();
-        EnumTest sixthDay = new EnumTest(Day.SATURDAY);
+        DayTest sixthDay = new DayTest(Day.SATURDAY);
         sixthDay.tellItLikeItIs();
-        EnumTest seventhDay = new EnumTest(Day.SUNDAY);
+        DayTest seventhDay = new DayTest(Day.SUNDAY);
         seventhDay.tellItLikeItIs();
     }
 }
