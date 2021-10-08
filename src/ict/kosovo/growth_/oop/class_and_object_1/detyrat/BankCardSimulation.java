@@ -23,12 +23,13 @@ public class BankCardSimulation {
     }
 
 
-
     public int getAccountNumber() {
+
         return accountNumber;
     }
 
     public void setAccountNumber(int accountNumber) {
+
         this.accountNumber = accountNumber;
     }
 
@@ -47,6 +48,7 @@ public class BankCardSimulation {
     public void setHolderNumber(int holderNumber) {
         this.holderNumber = holderNumber;
     }
+
     public void setPin(int pin) {
         this.pin = pin;
     }
@@ -93,17 +95,18 @@ public class BankCardSimulation {
         }
         balance += amount;
     }
-    public void withdraw(double amount){
-        if(amount>10000){
+
+    public void withdraw(double amount) {
+        if (amount > 10000) {
             System.out.println("Nuk mund te terhiqni permes bankomatit ju lutem ejani ne zyret tona qendrore");
             return;
-        }else{
+        } else {
             System.out.println("Ju faleminderit qe zgjodhet banken ton");
         }
     }
 
     public void checkBalance() {
-        System.out.println("Balanci juaj eshte: " );
+        System.out.println("Balanci juaj eshte: ");
         return;
     }
 }

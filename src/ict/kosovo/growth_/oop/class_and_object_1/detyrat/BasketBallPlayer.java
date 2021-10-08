@@ -81,10 +81,12 @@ public class BasketBallPlayer {
     }
 
     public String getPozita() {
+
         return pozita;
     }
 
     public void setPozita(String pozita) {
+
         this.pozita = pozita;
     }
 
