@@ -1,4 +1,4 @@
-package ict.kosovo.growth_.oop.enums.ushtrime3;
+package ict.kosovo.growth_.oop.ushtrime3;
 
 public class KatroriTest {
     public static void main(String[] args) {

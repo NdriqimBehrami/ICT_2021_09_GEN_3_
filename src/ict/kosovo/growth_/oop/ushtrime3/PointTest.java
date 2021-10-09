@@ -1,5 +1,5 @@
-package ict.kosovo.growth_.oop.enums.ushtrime3;
-import javax.swing.*;
+package ict.kosovo.growth_.oop.ushtrime3;
+
 public class PointTest {
     public static void main(String[] args) {
         Point pika1 = new Point(1, 3);
