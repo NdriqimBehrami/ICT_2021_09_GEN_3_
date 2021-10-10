@@ -1,4 +1,6 @@
-package ict.kosovo.growth_.oop.ushtrime3;
+package ict.kosovo.growth_.oop.ushtrime3.ToDoDetyra;
+
+import ict.kosovo.growth_.oop.ushtrime3.DistanceUnit;
 
 public class Pixel {
     private double x;

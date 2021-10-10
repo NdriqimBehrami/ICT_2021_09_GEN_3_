@@ -1,4 +1,4 @@
-package ict.kosovo.growth_.oop.ushtrime3;
+package ict.kosovo.growth_.oop.ushtrime3.ToDoDetyra;
 
 public class PixelTest {
     public static void main(String[] args) {
