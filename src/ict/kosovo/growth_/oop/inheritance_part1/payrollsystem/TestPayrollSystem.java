@@ -16,6 +16,13 @@ public class TestPayrollSystem {
 
         PayrollGenerator puntorit2 = new PayrollGenerator(25550, "Ndriqim", "Behrami", 27.5, 48);
         System.out.println(puntorit2);
+        System.out.println("------------------------------");
+
+        Employee puntori5 = new Secretary(25443,"Filane","Fisteku",38,12.60);
+        System.out.println(puntori5);
+        System.out.println("------------------------------");
+        Employee puntori6 = new Manager(25661,"Cristiano","Ronaldo",25000);
+        System.out.println(puntori6);
 
 
     }
