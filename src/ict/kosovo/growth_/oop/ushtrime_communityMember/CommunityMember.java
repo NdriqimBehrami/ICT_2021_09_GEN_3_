@@ -67,6 +67,7 @@ public class CommunityMember {
 
     @Override
     public String toString() {
-        return String.format("Emri i plote: %s %s %n Mosha: %d %n Gjinia: %s %n Adressa: %s %n Vendbanimi %s %n ",getEmri(),getMbiemri(),getMosha(),getGjinia(),getAdressa(),getVendbanimi());
+        return String.format("Emri i plote: %s %s %n Mosha: %d %n Gjinia: %s %n Adressa: %s %n Vendbanimi %s %n ",
+                getEmri(),getMbiemri(),getMosha(),getGjinia(),getAdressa(),getVendbanimi());
     }
 }
