@@ -4,6 +4,7 @@ public abstract class Wrestler {
     public static void sayHello() {
         System.out.println("Hello from Wrestler Abstract class!");
     }
+
     //variabla instance
     private String name;
 
@@ -13,16 +14,19 @@ public abstract class Wrestler {
     }
 
     public final void setName(final String name) {
-        this.name=name;
+        this.name = name;
     }
+
     public final String getName() {
         return this.name;
     }
 
     public void payForWork(int hours) {
-        System.out.println("Payment: "+hours*250.00);
+        System.out.println("Payment: " + hours * 250.00);
     }
 
     public abstract void themeMusic();
+
     public abstract void finisher();
+    //wrestler classa
 }
