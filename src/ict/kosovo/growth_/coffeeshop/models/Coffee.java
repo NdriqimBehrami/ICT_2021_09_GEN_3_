@@ -24,7 +24,7 @@ public abstract class Coffee {
         this.reviews = new ArrayList<>();
     }
     public Coffee(String name,char size,BigDecimal price)throws NegativePriceException{
-        this(name,size,true,price,Rating.NO_STAR, new ArrayList<>());
+        this(name,size,true,price,Rating.TWO_STAR, new ArrayList<>());
     }
 
     public String getName() {

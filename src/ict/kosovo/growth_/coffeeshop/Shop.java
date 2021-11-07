@@ -1,44 +1,40 @@
 package ict.kosovo.growth_.coffeeshop;
 
-import ict.kosovo.growth_.coffeeshop.exceptions.NegativePriceException;
+
 import ict.kosovo.growth_.coffeeshop.models.*;
 import ict.kosovo.growth_.coffeeshop.services.CoffeeManager;
 
 import java.io.IOException;
-import java.math.BigDecimal;
-import java.util.ArrayList;
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
 
 public class Shop {
     public static void main(String[] args) {
-//        Coffee espreso = new Coffee("Makiato",'M',false,BigDecimal.valueOf(1.5), Rating.FOUR_STAR);
-//        System.out.println(espreso);
-////    }
-//      try {
-//          Coffee espreso = new HotCoffee("Espresso",'S',false,BigDecimal.valueOf(0.75),Rating.THREE_STAR,new ArrayList<>());
-//
-//
-//          espreso.getReviews().add(new Review("Mire",Rating.FIVE_STAR,"nb"));
-//          espreso.getReviews().add(new Review("Mire",Rating.THREE_STAR,"nn"));
-//          espreso.getReviews().add(new Review("Mire",Rating.ONE_STAR,"bb"));
-//
-//          System.out.println(espreso);
-//      }catch (NegativePriceException ex){
-//          System.out.println(ex.getMessage());
-//          System.out.println(ex.getPrice());
-//      }
-////        Review review1 = new Review("Shume kaffe e mire",Rating.FIVE_STAR," Ndriqim Behrami");
-//       // System.out.println(review1);
-//    }
+        DateTimeFormatter dtf = DateTimeFormatter.ofPattern("yyyy/MM/dd HH:mm:ss");
+        LocalDateTime now = LocalDateTime.now();
+
+
         CoffeeManager cm = null;
+        System.out.println("----------------Zero1 Coffee App-----------------");
+        System.out.println();
+
+        System.out.println("-----------------------------------------");
         try {
             cm = new CoffeeManager("en-US");
             cm.createCoffee(CoffeeType.HOT_COFFEE, "Makiato", 'M', true, 1.2, Rating.NO_STAR);
-            cm.createCoffee(CoffeeType.COLD_COFFEE, "LATE", 'M', false, 2.2, Rating.NO_STAR);
+            cm.createCoffee(CoffeeType.COLD_COFFEE, "LATE", 'S', false, 2.2, Rating.TWO_STAR);
+            cm.createCoffee(CoffeeType.HOT_COFFEE, "espresso", 'S', false, 0.7, Rating.NO_STAR);
+            cm.createCoffee(CoffeeType.TEA, "Tea", 'S', false, 1.80, Rating.TWO_STAR);
             cm.printCoffees();
+            System.out.println("Date/Time:");
+            System.out.println(dtf.format(now));
+
 
         } catch (IOException e) {
             e.printStackTrace();
         }
+
 
     }
 }

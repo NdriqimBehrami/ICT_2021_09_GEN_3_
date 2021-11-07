@@ -42,8 +42,8 @@ public class CoffeeManager {
             coffees.add(coffee);
             return coffee;
         } catch (NegativePriceException e) {
-            logmp.logger.severe(formatter.getText(e.getMessage())+ "  " + e.getPrice());
-            System.out.println("Ruaje logun: " +  formatter.getText(e.getMessage()));
+            logmp.logger.severe(formatter.getText(e.getMessage()) + "  " + e.getPrice());
+            System.out.println("Ruaje logun: " + formatter.getText(e.getMessage()));
         }
         return coffee;
 
@@ -62,6 +62,19 @@ public class CoffeeManager {
         return coffee;
 
     }
+    public Coffee createTea(String name, char size, boolean withMilk, double price, Rating rating) {
+        Coffee coffee = null;
+        try {
+            coffee = new Tea(name, size, withMilk, BigDecimal.valueOf(price), rating, null);
+            coffees.add(coffee);
+            return coffee;
+        } catch (NegativePriceException e) {
+            logmp.logger.severe(formatter.getText(e.getMessage())+" "+ e.getPrice());
+            System.out.println("Ruaje logun: " + formatter.getText(e.getMessage()));
+        }
+        return coffee;
+
+    }
 
     public Coffee createCoffee(CoffeeType coffeeType, String name, char size, boolean withMilk, double price, Rating rating) {
         return coffeeType == CoffeeType.HOT_COFFEE ?
@@ -69,21 +82,6 @@ public class CoffeeManager {
                 createColdCoffee(name, size, withMilk, price, rating);
 
     }
-
-    public void printCoffees() {
-        System.out.printf("%s: %d%n",formatter.getText("totalCoffees"),coffees.size());
-        if (!coffees.isEmpty()) {
-            System.out.println("-----------------------");
-            for (Coffee coffee : coffees) {
-                System.out.println(formatter.formatCoffee(coffee));
-                System.out.println("--------------------")
-                ;
-            }
-        }
-        System.out.println("--------------------------");
-
-    }
-
     private static class ResourceFormatter {
         private Locale locale;
         private ResourceBundle resources;
@@ -110,4 +108,34 @@ public class CoffeeManager {
             return resources.getString(key);
         }
     }
+
+//    public void printCoffees() {
+//        System.out.printf("%s %d%n",formatter.getText("totalCoffees"),coffees.size());
+//        if (!coffees.isEmpty()) {
+//            System.out.println("-----------------------");
+//            for (Coffee coffee : coffees) {
+//                System.out.println(formatter.formatCoffee(coffee));
+//                System.out.println("--------------------")
+//                ;
+//            }
+//        }
+//        System.out.println("--------------------------");
+//
+//    }
+public void printCoffees() {
+    System.out.printf("");
+    if (!coffees.isEmpty()) {
+        for (Coffee coffee : coffees) {
+            System.out.println(formatter.formatCoffee(coffee));
+            System.out.println("-----------------------------------------");
+        }
+        System.out.printf("%s %d %n%s %.2fEUR %n",formatter.getText("totalCoffees"),coffees.size(),"Total price: ",5.9);
+        System.out.println("-----------------------------------------");
+
+    }
+
+}
+
+
+
 }
